@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js one</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="logo_wrap" href="index.html">
+                <img src="img/logo.png" alt="javascript">
+            </a>
+            <h1>Тренировка Javascript</h1>
+            <h2 class="tabs-title title">1.Табы</h2>
+            <div class="tabs-block-wrapper">
+                <div id="tabs">
+                    <div class="tab-btn active" data-btn="1">
+                        Козочка
+                    </div>
+                    <div class="tab-btn" data-btn="2">
+                        Жираф
+                    </div>
+                    <div class="tab-btn" data-btn="3">
+                        Олень
+                    </div>
+                    <div class="tab-btn" data-btn="4">
+                        Бурундук
+                    </div>
+                </div>
+                <div id="contents">
+                    <div class="content active" data-content="1">
+                        <h3 class="content-title">Козочка</h3>
+                        <p class="content-text">
+                            Домашняя коза (лат. Capra hircus) — домашнее животное, вид 
+                            парнокопытных из рода горные козлы (Capra) семейства 
+                            полорогих.
+                        </p>
+                        <p class="content-text">
+                            Коза — одно из первых прирученных животных. Одомашнена на 
+                            Ближнем Востоке, приблизительно 9 тыс. лет назад. Предком 
+                            домашней козы был дикий безоаровый козёл (Capra hircus 
+                            aegagrus), до сегодняшнего дня встречающийся от греческих 
+                            островов в Эгейском море через Малую Азию, Армянское 
+                            нагорье и Переднюю Азию до Средней Азии.
+                        </p>
+                    </div>
+                    <div class="content" data-content="2">
+                        <h3 class="content-title">Жираф</h3>
+                        <p class="content-text">
+                            Парнокопытное млекопитающее из семейства жирафовых. 
+                            Является самым высоким наземным животным планеты.
+                        </p>
+                        <p class="content-text">
+                            Самцы жирафа достигают высоты до 5,5—6,1 м (около 1/3 длины 
+                            составляет шея) и весят до 900—1200 кг. Самки, как правило, 
+                            немного меньше и легче.
+                            Шея у жирафов необычайно длинная, и это несмотря на то, 
+                            что у них, как и почти у всех других млекопитающих, лишь 
+                            семь шейных позвонков.
+                        </p>
+                    </div>
+                    <div class="content" data-content="3">
+                        <h3 class="content-title">Олень</h3>
+                        <p class="content-text">
+                            Семейство парнокопытных млекопитающих, содержащее 51 современный вид. 
+                            Оленевые распространены в Евразии, Северной и Южной Америке
+                        </p>
+                        <p class="content-text">
+                            Величина оленевых варьируется между величиной зайца (пуду) 
+                            и лошади (лось). Характерны разветвлённые рога, которые 
+                            имеются в наличии только у самцов. Исключениями являются 
+                            только водяной олень, у которого вообще нет рогов, и 
+                            северный олень, у которого рога носят оба пола. Рога 
+                            сбрасываются каждый год и вырастают заново.
+                        </p>
+                    </div>
+                    <div class="content" data-content="4">
+                        <h3 class="content-title">Бурундук</h3>
+                        <p class="content-text">
+                            Монофилетическая группа грызунов из семейства беличьих. 
+                            Согласно классификации, принимаемой Красной книгой МСОП
+                        </p>
+                        <p class="content-text">
+                            Существует три самостоятельных рода бурундуков: Neotamias, 
+                            Eutamias и Tamias (традиционно рассматривались как подроды 
+                            рода Tamias)[4]. Всего описано 25 современных видов 
+                            бурундуков, большинство из которых обитает в Северной 
+                            Америке, за исключением одного евразийского вида
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title modal-title">2. Модальное окно</h2>
+            <div class="modal-wrap-btn">
+                <button id="btn-open" class="btn">Вызвать дождь</button>
+            </div>
+            <div id="modal-wrapper">
+                <div id="overlay"></div>
+                <div id="modal-window">
+                    <div class="modal-content">
+                        <h3 class="rain-title">Немного о дожде</h3>
+                        <p class="rain-text">
+                            До́ждь — атмосферные осадки, выпадающие из облаков в виде 
+                            капель жидкости со средним диаметром от 0,5 до 6—7 мм[1].
+                            Осенние дожди. Южная Эстония Летний дождь в Санкт-Петербурге
+                            Жидкие осадки с меньшим диаметром капель называются 
+                            моросью[2]. Капли с диаметром больше 6—7 мм разбиваются 
+                            в процессе падения из облаков на меньшие капли, поэтому 
+                            даже при сильнейшем ливне диаметр капель не превышает 6—7 мм. Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь) до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с интенсивностью 15,5 мм/мин был зафиксирован в 1920 году в Германии[2].
+                        </p>
+                    </div>
+                    <div>
+                        <button id="btn-close" class="btn">Звкрыть</button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title slider-title">3. Слайдер</h3>
+            <div class="flex-wrapper">
+                <div class="slider-btn" id="btn-prev"></div>
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <p class="slide-text">
+                            Американский писатель О. Генри выиграл конкурс на самый 
+                            короткий рассказ, который имеет все составляющие 
+                            традиционного рассказа — завязку, кульминацию и развязку:
+                        </p>
+                        <p class="slide-text">
+                            «Шофер закурил и нагнулся над бензобаком, посмотреть 
+                            много ли осталось бензина. Покойнику было двадцать три года».
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-text">
+                            Фредерик Браун сочинил кратчайшую страшную 
+                            историю из когда-либо написанных:
+                        </p>
+                        <p class="slide-text">
+                            «Последний человек на Земле сидел в комнате. 
+                            В дверь постучались…»
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-text">
+                            Англичане тоже организовывали конкурс на самый короткий 
+                            рассказ. Но по условиям конкурса в нем должны были быть 
+                            упомянуты королева, Бог, секс, тайна. Первое место 
+                            присудили автору такого рассказа:
+                        </p>
+                        <p class="slide-text">
+                            «О Боже, — воскликнула королева, — я беременна и не знаю от кого!»
+                        </p>
+                    </div>
+                    <div class="dots-wrapper">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="slider-btn" id="btn-next"></div>
+            </div>
+        </div>
+    </header>
+    <script src="js/main.js"></script>
+</body>
+</html>
